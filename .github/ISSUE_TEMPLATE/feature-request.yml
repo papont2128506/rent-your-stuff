@@ -1,0 +1,22 @@
+name: Feature Request
+description: Request for a new Feature
+title: "[Feature Request]: "
+labels: ["feature", "request"]
+assignees:
+  - papont2128506
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome to the Rent your stuff - Wishlist
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature description
+      description: What do you like to see?
+      value:  |
+        As a ...
+        I want to ...
+        So what I can ...
+    validations:
+      required: true
