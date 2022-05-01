@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:13.5-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: rent_your_stuff
+      POSTGRES_USER: cuba
+      POSTGRES_PASSWORD: cuba
+    volumes:
+      - ./.jmix/postgres:/var/lib/postgresql/data

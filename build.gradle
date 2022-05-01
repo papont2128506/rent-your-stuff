@@ -1,12 +1,12 @@
 plugins {
-    id 'io.jmix' version '1.1.4'
+    id 'io.jmix' version '1.2.0'
     id 'java'
 }
 
 apply plugin: 'org.springframework.boot'
 
 jmix {
-    bomVersion = '1.1.4'
+    bomVersion = '1.2.2'
 }
 
 group = 'ru.papont'
@@ -33,11 +33,11 @@ dependencies {
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
 
-    runtimeOnly 'org.hsqldb:hsqldb'
 
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+    implementation("org.postgresql:postgresql")
 }
 
 test {
