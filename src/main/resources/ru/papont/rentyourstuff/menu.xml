@@ -4,6 +4,7 @@
     <menu id="application" caption="msg://ru.papont.rentyourstuff/menu.application" insertBefore="administration">
         <item screen="User.browse" caption="msg://ru.papont.rentyourstuff.screen.user/UserBrowse.caption"/>
         <item screen="themeSettingsScreen" caption="msg://io.jmix.ui.app.themesettings/themeSettings.caption"/>
+        <item screen="Customer.browse" caption="msg://ru.papont.rentyourstuff.screen.customer/customerBrowse.menu"/>
     </menu>
 
 </menu-config>
