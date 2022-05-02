@@ -4,13 +4,13 @@ import io.jmix.core.metamodel.annotation.JmixEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotBlank;
 
 @JmixEntity
 @Embeddable
 public class Address {
+    @NotBlank
     @Column(name = "STREET", nullable = false)
-    @NotNull
     private String street;
 
     @Column(name = "POST_CODE")

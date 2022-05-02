@@ -6,7 +6,7 @@ plugins {
 apply plugin: 'org.springframework.boot'
 
 jmix {
-    bomVersion = '1.2.2'
+    bomVersion = '1.2.1'
 }
 
 group = 'ru.papont'
